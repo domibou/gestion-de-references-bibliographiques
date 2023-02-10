@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SupprimerReferenceInterface</class>
+ <widget class="QDialog" name="SupprimerReferenceInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>429</width>
+    <height>237</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SupprimerReference</string>
+  </property>
+  <widget class="QPushButton" name="OK">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>190</y>
+     <width>90</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Annuler">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>190</y>
+     <width>90</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Annuler</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="identifiantSupprimer">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>90</y>
+     <width>261</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="identifiantSupprimerLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Identifiant</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Annuler</sender>
+   <signal>clicked()</signal>
+   <receiver>SupprimerReferenceInterface</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>214</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OK</sender>
+   <signal>clicked()</signal>
+   <receiver>SupprimerReferenceInterface</receiver>
+   <slot>confirmerSuppression()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>344</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>214</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>confirmerSuppression()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>4</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="Labo3_Solutions">
+            <file>file:/home/etudiant/Bureau/TP4/TP4GUI/BibliographieInterface.h</file>
+            <file>file:/home/etudiant/Bureau/TP4/TP4GUI/SupprimerReferenceInterface.h</file>
+            <file>file:/home/etudiant/Bureau/TP4/TP4GUI/BibliographieInterface.cpp</file>
+            <file>file:/home/etudiant/Bureau/TP4/TP4GUI/OuvrageInterface.cpp</file>
+            <file>file:/home/etudiant/Bureau/TP4/TP4GUI/main.cpp</file>
+            <file>file:/home/etudiant/Bureau/TP4/TP4GUI/JournalInterface.h</file>
+            <file>file:/home/etudiant/Bureau/TP4/TP4GUI/JournalInterface.cpp</file>
+            <file>file:/home/etudiant/Bureau/TP4/TP4GUI/SupprimerReferenceInterface.cpp</file>
+        </group>
+    </open-files>
+</project-private>

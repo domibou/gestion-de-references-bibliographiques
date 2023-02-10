@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BibliographieInterface</class>
+ <widget class="QMainWindow" name="BibliographieInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BibliographieInterface</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="affichage">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>60</y>
+      <width>631</width>
+      <height>451</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOp_rations">
+    <property name="title">
+     <string>Opérations</string>
+    </property>
+    <widget class="QMenu" name="menuAjouter_une_r_f_rence">
+     <property name="title">
+      <string>Ajouter une référence</string>
+     </property>
+     <addaction name="actionJournal"/>
+     <addaction name="actionOuvrage"/>
+    </widget>
+    <addaction name="menuAjouter_une_r_f_rence"/>
+    <addaction name="actionSupprimer_une_r_f_rence"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <addaction name="menuOp_rations"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionJournal">
+   <property name="text">
+    <string>Journal</string>
+   </property>
+  </action>
+  <action name="actionOuvrage">
+   <property name="text">
+    <string>Ouvrage</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_une_r_f_rence">
+   <property name="text">
+    <string>Supprimer une référence</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuitter</sender>
+   <signal>triggered()</signal>
+   <receiver>BibliographieInterface</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionJournal</sender>
+   <signal>triggered()</signal>
+   <receiver>BibliographieInterface</receiver>
+   <slot>dialogAjouterJournal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>affichage</sender>
+   <signal>textChanged()</signal>
+   <receiver>BibliographieInterface</receiver>
+   <slot>affichage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>395</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOuvrage</sender>
+   <signal>triggered()</signal>
+   <receiver>BibliographieInterface</receiver>
+   <slot>dialogAjouterOuvrage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSupprimer_une_r_f_rence</sender>
+   <signal>triggered()</signal>
+   <receiver>BibliographieInterface</receiver>
+   <slot>dialogSupprimerReference()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>dialogAjouterJournal()</slot>
+  <slot>affichage()</slot>
+  <slot>dialogAjouterOuvrage()</slot>
+  <slot>dialogSupprimerReference()</slot>
+ </slots>
+</ui>
